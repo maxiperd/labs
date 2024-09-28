@@ -5,3 +5,5 @@ This docker compose structure is to set up a simple web server and database that
 Use `docker-compose up --build` to deploy.
 
 Access the website in `http://localhost:8081`
+
+Also, two scripts are provided to dump information using error and time based attacks.
