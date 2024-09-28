@@ -7,7 +7,7 @@ services:
     volumes:
       - ./web:/var/www/html
     ports:
-      - "8080:80"
+      - "8081:80"
     networks:
       - webnet
     depends_on:
