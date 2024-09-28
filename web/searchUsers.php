@@ -1,4 +1,4 @@
-<?php>
+<?php
   $servername = "mysql_db";
   $username = "testuser";
   $password = "testpassword";
@@ -11,4 +11,4 @@
   if(!isset($response['username'])){
     http_response_code(404);
   }
-<?>
+?>
