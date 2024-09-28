@@ -9,6 +9,6 @@
   $data = mysqli_query($conn, "select username from users where id = $id");
   $response = mysqli_fetch_array($data);
   if(!isset($response['username'])){
-    http_response_code(404)
+    http_response_code(404);
   }
 <?>
