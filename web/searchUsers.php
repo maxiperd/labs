@@ -5,7 +5,7 @@
   $dbname = "testdb";
   $conn = new mysqli($servername, $username, $password, $dbname);
 
-  $id = mysqli_real_escape_string($conn, $_GET('id'));
+  $id = mysqli_real_escape_string($conn, $_GET['id']);
   $data = mysqli_query($conn, "select username from users where id = $id");
   $response = mysqli_fetch_array($data);
   if(!isset($response['username'])){
