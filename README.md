@@ -1,2 +1,3 @@
 # sqli_lab
-Simple structure to setup a simple Apache/MySQL/PHP server.
+
+This docker compose structure is to set up a simple web server and database that is vulnerable to SQLi Attacks.
