@@ -1,9 +1,9 @@
-# SQL Injection LAMP Server for docker.
+# Servidor LAMP (Linux Apache MySQL PHP).
 
-This docker compose structure is to set up a simple web server and database that is vulnerable to SQLi Attacks.
+Este laboratorio prepara un ambiente vulnerable a inyecciones SQL.
 
-Use `docker-compose up --build` to deploy.
+Utiliza `docker-compose up --build` para desplegar.
 
-Access the website in `http://localhost:8081`
+Accede al sitio en `http://localhost:8081`
 
-Also, two scripts are provided to dump information using error and time based attacks.
+A su vez, se proporcionan dos scripts para realizar ataques SQLi basado en error y tiempo.
